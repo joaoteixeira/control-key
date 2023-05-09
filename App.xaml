@@ -4,9 +4,7 @@
              xmlns:local="clr-namespace:ControlKeys"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        
         <ResourceDictionary>
-
             <FontFamily x:Key="RobotoLight">pack://application:,,,/Fonts/Roboto-Light.ttf#Roboto</FontFamily>
             <FontFamily x:Key="RobotoMedium">pack://application:,,,/Fonts/Roboto-Medium.ttf#Roboto</FontFamily>
 
