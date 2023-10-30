@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ControlKeys"
+        xmlns:component="clr-namespace:ControlKeys.Components"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -58,12 +59,8 @@
             </Border>
         </WrapPanel>
 
-        <WrapPanel Grid.Row="1" Grid.Column="1" Margin="5">
-            <Button Style="{StaticResource ButtonRadius}" Content="João Teixeira"/>
-            <Button Style="{StaticResource ButtonRadius}" Content="João Teixeira"/>
-            <Button Style="{StaticResource ButtonRadius}" Content="João Teixeira"/>
-            <Button Style="{StaticResource ButtonRadius}" Content="João Teixeira"/>
-            <Button Style="{StaticResource ButtonRadius}" Content="João Teixeira"/>
+        <WrapPanel x:Name="WPanel" Grid.Row="1" Grid.Column="1" Margin="5">
+            <component:PersonButton Click="Button_Click" Title="João Teixeira Junior" Subtitle="Docente" />
         </WrapPanel>
         
     </Grid>

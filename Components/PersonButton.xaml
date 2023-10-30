@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="ControlKeys.Components.PersonButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ControlKeys.Components"
+             mc:Ignorable="d">
+    <Grid>
+        <Button x:Name="B1" Style="{StaticResource ButtonRadius}">
+            <StackPanel Margin="0 0">
+                <TextBlock Style="{StaticResource  KeyTextBox}" Text="{Binding Title}"/>
+                <TextBlock Style="{StaticResource  KeyTextBox18}" Text="{Binding Subtitle}"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</UserControl>
